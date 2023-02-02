@@ -1,0 +1,30 @@
+app:
+  name: "bluebell"
+  mode: "dev"
+  app_port: 9090
+  version: "v0.0.1"
+  start_time: "2020-07-01"
+  machine_id: 1
+
+log:
+  level: "debug"
+  filename: "bluebell.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  mysql_host: "127.0.0.1"
+  mysql_port:  3306
+  user: "root"
+  mysql_password: "admin123"
+  dbname: "bluebell"
+  max_open_conns: 20
+  max_idle_conns: 10
+ 
+redis:
+  redis_host: "127.0.0.1"
+  redis_port: 6379
+  db: 0
+  redis_password: 
+  poolsize: 100
